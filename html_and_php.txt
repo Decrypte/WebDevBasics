@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <form action="file_handling_1.php" method="post">
+        <p>Enter a number: </p>
+        <input type="text" name="n1">
+        <p>Enter a number: </p>
+        <input type="text" name="n2">
+        <br><br>
+        <input type="submit">
+    </form>
+</body>
+</html>
+
+
+
+
+
+
+
+<?php
+
+$num1 = $_POST['n1'];
+$num2 = $_POST['n2'];
+
+$sum = $num1 + $num2;
+
+echo $sum;
+?>
